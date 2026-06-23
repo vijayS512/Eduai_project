@@ -1,0 +1,20 @@
+<h1>AI Tutor</h1>
+
+<form action="/chat" method="POST">
+
+<input
+type="text"
+name="question"
+placeholder="Ask Question">
+
+<button>Ask</button>
+
+</form>
+
+<% if(typeof answer !== 'undefined'){ %>
+
+<h3>
+<%= answer %>
+</h3>
+
+<% } %>
